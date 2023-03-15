@@ -8,6 +8,70 @@
   font-family: "Happy Monkey", cursive;
   font-family: "Orbitron", sans-serif;
 }
-body{
-    
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+}
+.hero {
+  display: flex;
+ justify-content: space-between;
+ 
+
+}
+.title {
+  
+  font-size: medium;
+}
+.result {
+  background-color: hsl(234, 85%, 45%);
+  border-radius: 20px;
+  padding: 5% 7%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: hsl(241, 100%, 89%);
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.score span {
+  color: hsl(0, 0%, 100%);
+  font-weight: 800;
+  font-size: 50px;
+}
+.score p{
+    font-size: 10px;
+}
+.result .score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+
+  background: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+.subtitle h2 {
+  color: hsl(0, 0%, 100%);
+  margin: 20px 0;
+}
+.subtitle p{
+    max-width: 600px;
+   font-size: 13px;
 }
